@@ -34,5 +34,5 @@ it up yet. Also contact him if you would like to be a part of the team.
 
 ## Future
 
-Node is really not a good backend for scalability. I would like to create a PHP API for this application. The database schema is  
-also pretty garbage, it needs complete overhaul.
+Node is really not a good backend for scalability. I would like to create a PHP API for this application.  
+The database schema is also pretty garbage, it needs complete overhaul.
