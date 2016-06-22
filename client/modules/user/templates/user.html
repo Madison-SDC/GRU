@@ -1,0 +1,10 @@
+<div id="head2" class="useFont"><h1><center>{{user.Emp_Name}} / <i>{{user.Alias}}</i></center></h1></div>
+<div class="container" style="overflow-y:scroll">
+  <span class="useFont" style="font-size:200%">User's current score: <b>{{user.Points}}</b></span>
+  <table class="table table-hover table-striped useFont">
+    <tr><td>Thread Name</td><td>Date</td></tr>
+    <tr ng-repeat="thread in user_threads">
+      <td><a href="/#/thread/{{thread.Id}}">{{thread.Name}}</a></td><td>{{thread.Timestamp | date}}</td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,28 @@
+<div id="head2" class="useFont"><h1><center>{{current_category.Category_Name}}</center></h1></div>
+
+<div class="container useFont">
+  <table class="table table-hover table-striped">
+    <tbody>
+      <tr>
+        <th>Thread</th>
+        <th></th>
+        <th>Date Posted</th>
+        <th>Posted by</th>
+      </tr>
+      <tr ng-repeat="thread in threads">
+        <td class="th_name"><a ng-href="/#/thread/{{thread.Id}}">{{thread.Name}}</a></td>
+        <td><voting></voting></td>
+        <td class="th_time">{{thread.Timestamp|date}}</td>
+        <td class="th_user"><a ng-href="/#/user/{{thread.User_ID}}"><i>{{thread.User_ID}}</i></a></td>
+      </tr>
+      <tr>
+        <form>
+        <td><input type="text" style="color:black" ng-model="thread_name"> New Thread</td>
+        <td><button type="submit" class="btn btn-secondary" style="color:black" ng-click="sendGet()">Submit</button></td>
+        <td></td>
+        <td></td>
+        </form>
+      </tr>
+    </tbody>
+  </table>
+</div>

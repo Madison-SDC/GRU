@@ -1,0 +1,17 @@
+<div id="head1" class="useFont"><h1><center>Departments</center></h1></div>
+
+<div id="leftnav">
+  <div id="wrapper">
+    <div class="overlay"></div>
+      <!-- Sidebar -->
+      <nav class="navbar navbar-inverse navbar-left" id="sidebar-wrapper" role="navigation">
+        <ul class="nav sidebar-nav" ng-controller="categoriesController">
+          <div><li id='leftnavheader' class="sidebar-brand"></li></div>
+          <li ng-repeat="category in categories" class="useFont">
+            <a ng-href="/#/category/{{category.Category_ID}}">{{category.Category_Name}}</a>
+          </li>
+        </ul>
+    </nav>
+  <!-- /#sidebar-wrapper -->
+  </div>
+</div>

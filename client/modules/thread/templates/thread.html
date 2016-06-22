@@ -1,0 +1,32 @@
+<div id="head2" class="useFont"><h1><center>{{thread.Name}}</center></h1></div>
+<div class="container useFont">
+  <span style="font-size:200%"><b>
+  Date Posted: {{thread.Timestamp|date}}&nbsp;&nbsp;&nbsp;&nbsp;
+  User: {{thread.User_ID}}</b><br></span>
+  <table class="table table-striped table-hover">
+    <tbody>
+      <tr>
+        <th>Comment</td>
+        <th></th>
+        <th>Date Posted</th>
+        <th>Score</th>
+        <th>Posted by</th>
+      </tr>
+      <tr ng-repeat="comment in comments">
+        <td>{{comment.Comment_Itself}}</td>
+        <td><voting></voting></td>
+        <td>{{comment.Timestamp|date}}</td>
+        <td>{{comment.Score}}</td>
+        <td><i><a ng-href="/#/user/{{comment.Alias}}">{{comment.Alias}}</a></i></td>
+      </tr>
+      <tr>
+        <form>
+          <td><input type="text" ng-model="comment_name" value="New Comment"></td>
+          <td><button type="submit" ng-click="sendGet()">Submit</button></td>
+          <td></td>
+          <td></td>
+        </form>
+      </tr>
+    </tbody>
+  </table>
+</div>

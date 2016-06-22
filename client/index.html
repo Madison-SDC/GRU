@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hackday</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+  <!-- Font From Google -->
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+
+  <!-- Our Styling -->
+  <link rel="stylesheet" href="styles/main.css">
+
+  <base href='/'>
+</head>
+
+<body id='body' ng-app="sfhackday">
+
+  <navbar></navbar> <!--top nav-->
+  <leftnavbar></leftnavbar><!--left nav -->
+  <rightnavbar></rightnavbar> <!--Right nav (currently not working-->
+  <div ng-view></div> <!--Center Content -->
+
+  <div id="foot1" class="useFont"><center> For State Farm Internal Use Only </center></div>
+
+  <!-- Angular -->
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-route/angular-route.js"></script>
+  <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+  <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>1
+  <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+
+  <!-- Apps -->
+  <script src="app.js"></script>
+
+  <!-- Controllers -->
+  <script src="modules/main/controller.js"></script>
+  <script src="modules/categories/controller.js"></script>
+  <script src="modules/category/controller.js"></script>
+  <script src="modules/user/controller.js"></script>
+  <script src="modules/thread/controller.js"></script>
+
+  <!-- Shared -->
+  <script src="static/navbars/directive.js"></script> <!--Navbar Directives -->
+
+</body>
+</html>

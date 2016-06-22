@@ -1,0 +1,20 @@
+<div id="head2" class="useFont"><h1><center>Welcome to the Barn: <i><b>Hackday Edition</b></i></center></h1></div>
+
+<div class="container">
+
+	<!-- Login Prompt -->
+	<div id="login-splash" ng-show="alert===true" class="alert alert-warning inner" role="alert">
+
+		<p id="login-promt" class="useFont">Please log in first.</p>
+
+		<input id='username' type="text" ng-model="current_user">
+		<input id='password' type="password" ng-model="password">
+
+		<button id="login-button" type="button" class="btn useFont" ng-click="login()"><span aria-hidden="true">Submit
+		</span><span class="sr-only useFont">Submit</span></button>
+	</div>
+
+<!-- Body -->
+<custom-gallery></custom-gallery>
+
+</div>

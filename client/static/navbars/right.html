@@ -1,0 +1,31 @@
+<div id="head3" class="useFont"><h1><center>Leaderboard</center></h1></div>
+<div id="rightnav">
+  <div id="wrapper">
+    <div class="overlay">
+      <div class="dropdown">
+      <!--<button  align="center" id="leaderboardbutton" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Leaderboard<span class="caret"></span></button>-->
+      <ul class="dropdown-menu">
+          <li><a href="index.html">Past Week</a></li>
+          <li><a href="index.html">Past Month</a></li>
+          <li><a href="index.html">Past Year</a></li>
+      </ul>
+      </div>
+      </div>
+        <!-- /#sidebar-wrapper -->
+        <div id="leaderboardlist" class="useFont"><h4 id="lb-list-header">Today's Leaderboard:</h4></div>
+      <div>
+      <table class="useFont">
+        <tr>
+          <th>Name</th>
+          <th><i>Alias</i></th>
+          <th><b>Score</b></th>
+        </tr>
+        <tr ng-repeat="user in users">
+          <td>{{user.Emp_Name}}</td>
+          <td><i>{{user.Alias}}</i></td>
+          <td><b>{{user.Points}}</b></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
