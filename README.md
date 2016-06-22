@@ -32,4 +32,7 @@ is not liking remote connections. This can be fixed but for now don't try to pul
 see GRU contact Vaughn Kottler, it lives at vaughnsplayground.me when Node is running but I haven't decided to keep   
 it up yet. Also contact him if you would like to be a part of the team.
 
+## Future
 
+Node is really not a good backend for scalability. I would like to create a PHP API for this application. The database schema is  
+also pretty garbage, it needs complete overhaul.
