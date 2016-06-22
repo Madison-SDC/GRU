@@ -5,15 +5,24 @@ Members: Vaughn Kottler, Paul Kurians
 ## Technologies
 
 1. Angular JS 1.5.6
+
    Implementation is decent but could be a lot better. Routing and sharing scope is a challenge.
+   
 2. Node.js 4.2.6
   * Express, mysql, body-parser
+
    If Node is not already running the frontend won't be able to render anything.
+
 3. Ubuntu Server 16.04 LTS (Prod. Env.)
+
    Really awesome OS, would recommend running with Gnome Desktop. Much better than CentOS/RHEL for general purposes.
+
 4. MySQL
+
    Highly popular free relational DBMS. MqSQL Workbench extremely useful for working on schemas.
+
 5. NGNIX
+
    Set up to redirect traffic on port 80 to port 8080 where Node is listening. NGINX doesn't do anything else.
 
 ## Development
